@@ -27,7 +27,7 @@ Courier API is implemented in standard HTTP REST protocol, and we do not yet hav
 
 # How it works
 
-1. [Register webhook](#register-webhook) - first, make this request to set or update the webhook url that Page365 Courier API will push data to, after confirmed, `secret_key` will be send to you.
+1. [Register webhook](#register-webhook) - first, make this request to set or update the webhook url that Page365 Courier API will push data to, after manual confirmation, `secret_key` will be send to you via an email.
 2. [Wait for webhook](#shipment-created) - then wait for webhook that will be send, after shipment being create. You will get shipment information from the webhook, such as, id, sender address, and receiver address.
 3. [Update tracking code](#update-shipment-tracking-code) - then you will send tracking code that will be on parcel label back to us.
 4. Customer bring parcel to your service store
